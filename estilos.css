@@ -1,0 +1,1074 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =========================================
+   BARRA SUPERIOR
+========================================= */
+
+.barra-superior {
+    background: #202d2d;
+    color: white;
+    min-height: 38px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.contacto-superior {
+    display: flex;
+    gap: 25px;
+}
+
+.contacto-superior span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.redes-superiores {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-superiores a {
+    color: white;
+    transition: 0.3s;
+}
+
+.redes-superiores a:hover {
+    color: #46c6bd;
+}
+
+
+/* =========================================
+   HEADER / MENÚ
+========================================= */
+
+.header {
+    height: 82px;
+    padding: 0 5%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-radio {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #46c6bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.nombre-radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-radio strong {
+    color: #202d2d;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.nombre-radio small {
+    color: #46a9a3;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #46bdb5;
+}
+
+.menu-celular {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PORTADA / HERO
+========================================= */
+
+.hero {
+    min-height: 620px;
+    background:
+        linear-gradient(
+            rgba(20, 35, 35, 0.65),
+            rgba(20, 35, 35, 0.70)
+        ),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-contenido {
+    width: 90%;
+    max-width: 800px;
+}
+
+.texto-pequeno {
+    color: #6ee2d8;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.descripcion-hero {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #eeeeee;
+}
+
+.botones-hero {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.boton {
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.boton-principal {
+    background: #46c6bd;
+    color: white;
+}
+
+.boton-principal:hover {
+    background: #35aaa2;
+    transform: translateY(-3px);
+}
+
+.boton-secundario {
+    border: 1px solid white;
+    color: white;
+}
+
+.boton-secundario:hover {
+    background: white;
+    color: #202d2d;
+}
+
+
+/* =========================================
+   TÍTULOS DE SECCIONES
+========================================= */
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.titulo-seccion span {
+    color: #46bdb5;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.titulo-seccion h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #202d2d;
+    margin-top: 10px;
+}
+
+.titulo-seccion h2 strong {
+    color: #46bdb5;
+}
+
+.linea {
+    width: 55px;
+    height: 3px;
+    background: #46c6bd;
+    margin: 18px auto 0;
+}
+
+
+/* =========================================
+   SECCIÓN EN VIVO
+========================================= */
+
+.seccion-envivo {
+    padding: 90px 0;
+    background: #f5f8f7;
+}
+
+.reproductor {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.estado-vivo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 15px;
+    background: #f2f5f5;
+    border-radius: 20px;
+    color: #444;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.punto-vivo {
+    width: 9px;
+    height: 9px;
+    background: #e74c3c;
+    border-radius: 50%;
+    animation: parpadear 1s infinite;
+}
+
+@keyframes parpadear {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.icono-radio {
+    width: 90px;
+    height: 90px;
+    margin: 25px auto 20px;
+    border-radius: 50%;
+    background: #e5f6f4;
+    color: #46bdb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.reproductor h3 {
+    color: #202d2d;
+    font-size: 25px;
+}
+
+.reproductor > p {
+    color: #777;
+    margin: 10px 0 25px;
+    font-size: 13px;
+}
+
+.reproductor audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   ONDAS DE AUDIO
+========================================= */
+
+.ondas {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.ondas span {
+    width: 5px;
+    height: 20px;
+    background: #46c6bd;
+    border-radius: 5px;
+    animation: ondas 1s infinite ease-in-out;
+}
+
+.ondas span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.ondas span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.ondas span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.ondas span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.ondas span:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.ondas span:nth-child(7) {
+    animation-delay: 0.2s;
+}
+
+@keyframes ondas {
+
+    0%,
+    100% {
+        height: 12px;
+    }
+
+    50% {
+        height: 42px;
+    }
+}
+
+.mensaje-reproductor {
+    margin-top: 10px;
+    font-size: 11px !important;
+}
+
+
+/* =========================================
+   AHORA SONANDO
+========================================= */
+
+.ahora-sonando {
+    background: #202d2d;
+    padding: 35px 0;
+}
+
+.cancion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.portada-cancion {
+    width: 75px;
+    height: 75px;
+    background: #46c6bd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.informacion-cancion {
+    flex: 1;
+}
+
+.informacion-cancion span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #65d5cd;
+}
+
+.informacion-cancion h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.informacion-cancion p {
+    font-size: 12px;
+    color: #b9c1c1;
+}
+
+.icono-sonando {
+    font-size: 25px;
+    color: #46c6bd;
+}
+
+
+/* =========================================
+   NOSOTROS
+========================================= */
+
+.nosotros {
+    padding: 100px 0;
+}
+
+.nosotros-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.nosotros-texto h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #202d2d;
+    margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+    color: #666;
+    line-height: 1.9;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.tarjetas-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tarjeta {
+    padding: 30px 25px;
+    background: #f5f8f7;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta i {
+    color: #46bdb5;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.tarjeta h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #202d2d;
+}
+
+.tarjeta p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   PROGRAMACIÓN
+========================================= */
+
+.programacion {
+    padding: 100px 0;
+    background: #f5f8f7;
+}
+
+.programas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.programa {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid #46c6bd;
+    transition: 0.3s;
+}
+
+.programa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.programa span {
+    color: #46bdb5;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.programa h3 {
+    font-size: 17px;
+    margin: 10px 0;
+    color: #202d2d;
+}
+
+.programa p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PODCASTS
+========================================= */
+
+.podcasts {
+    padding: 100px 0;
+}
+
+.tarjetas-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contenido-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.contenido-card:hover {
+    transform: translateY(-7px);
+}
+
+.contenido-imagen {
+    height: 180px;
+    background: #202d2d;
+    color: #46c6bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.contenido-info {
+    padding: 25px;
+}
+
+.contenido-info small {
+    color: #46bdb5;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contenido-info h3 {
+    color: #202d2d;
+    margin: 10px 0;
+}
+
+.contenido-info p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.contenido-info a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #46bdb5;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   NOTICIAS
+========================================= */
+
+.noticias {
+    padding: 100px 0;
+    background: #f5f8f7;
+}
+
+.noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.noticias article {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.noticias article span {
+    color: #46bdb5;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.noticias article h3 {
+    margin: 12px 0;
+    color: #202d2d;
+}
+
+.noticias article p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.noticias article a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #46bdb5;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   REDES SOCIALES
+========================================= */
+
+.redes {
+    padding: 80px 0;
+    background: #202d2d;
+    color: white;
+    text-align: center;
+}
+
+.redes h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+}
+
+.redes p {
+    color: #bfc8c8;
+    margin: 12px 0 30px;
+    font-size: 13px;
+}
+
+.botones-redes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.botones-redes a {
+    color: white;
+    border: 1px solid #536161;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.botones-redes a:hover {
+    background: #46c6bd;
+    border-color: #46c6bd;
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contacto {
+    padding: 100px 0;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.datos-contacto h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #202d2d;
+    margin-bottom: 15px;
+}
+
+.datos-contacto > p {
+    color: #777;
+    line-height: 1.8;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.dato {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.dato > i {
+    width: 45px;
+    height: 45px;
+    background: #e5f6f4;
+    color: #46bdb5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dato strong {
+    font-size: 13px;
+    color: #202d2d;
+}
+
+.dato p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 14px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 12px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #46c6bd;
+}
+
+.formulario button {
+    padding: 15px;
+    border: none;
+    background: #46c6bd;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background: #35aaa2;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #172222;
+    color: white;
+}
+
+.footer-contenido {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-logo h3 {
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.footer-logo p {
+    color: #9fa9a9;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.footer-enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-enlaces h4,
+.footer-redes h4 {
+    margin-bottom: 8px;
+}
+
+.footer-enlaces a {
+    color: #aeb7b7;
+    font-size: 12px;
+}
+
+.footer-enlaces a:hover {
+    color: #46c6bd;
+}
+
+.footer-redes div {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-redes a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #495555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer-redes a:hover {
+    background: #46c6bd;
+}
+
+.copyright {
+    border-top: 1px solid #344141;
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright p {
+    color: #889292;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   BOTÓN VOLVER ARRIBA
+========================================= */
+
+.volver-arriba {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #46c6bd;
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.volver-arriba.mostrar {
+    display: block;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .programas,
+    .tarjetas-contenido,
+    .noticias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULARES
+========================================= */
+
+@media (max-width: 700px) {
+
+    .barra-superior {
+        display: none;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .menu-celular {
+        display: block;
+        color: #202d2d;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        display: none;
+        flex-direction: column;
+        padding: 25px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .menu.activo {
+        display: flex;
+    }
+
+    .menu a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .descripcion-hero {
+        font-size: 13px;
+    }
+
+    .botones-hero {
+        flex-direction: column;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 32px;
+    }
+
+    .reproductor {
+        padding: 30px 20px;
+    }
+
+    .nosotros-contenido,
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjetas-nosotros {
+        grid-template-columns: 1fr;
+    }
+
+    .programas,
+    .tarjetas-contenido,
+    .noticias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cancion {
+        gap: 12px;
+    }
+
+    .portada-cancion {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
