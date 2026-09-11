@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Radio | Radio Cristiana</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA SUPERIOR
+    ========================== -->
+
+    <div class="barra-superior">
+
+        <div class="contacto-superior">
+            <span>
+                <i class="fas fa-envelope"></i>
+                contacto@miradio.com
+            </span>
+
+            <span>
+                <i class="fab fa-whatsapp"></i>
+                +593 000 000 000
+            </span>
+        </div>
+
+        <div class="redes-superiores">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+    ========================== -->
+
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-radio">
+                <span>R</span>
+            </div>
+
+            <div class="nombre-radio">
+                <strong>MI RADIO</strong>
+                <small>Radio Cristiana</small>
+            </div>
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="#inicio">INICIO</a>
+            <a href="#nosotros">NOSOTROS</a>
+            <a href="#programacion">PROGRAMACIÓN</a>
+            <a href="#envivo">EN VIVO</a>
+            <a href="#podcasts">PODCASTS</a>
+            <a href="#noticias">NOTICIAS</a>
+            <a href="#contacto">CONTACTO</a>
+
+        </nav>
+
+
+        <!-- Botón para celular -->
+
+        <button class="menu-celular" id="botonMenu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         PORTADA PRINCIPAL
+    ========================== -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-contenido">
+
+            <p class="texto-pequeno">
+                UNA RADIO PARA TU VIDA
+            </p>
+
+            <h1>
+                Edifica tu vida<br>
+                con la Palabra de Dios
+            </h1>
+
+            <p class="descripcion-hero">
+                Música, mensajes y programas que llevan esperanza,
+                fe y bendición a cada hogar.
+            </p>
+
+            <div class="botones-hero">
+
+                <a href="#envivo" class="boton boton-principal">
+                    <i class="fas fa-play"></i>
+                    ESCÚCHANOS EN VIVO
+                </a>
+
+                <a href="#nosotros" class="boton boton-secundario">
+                    CONÓCENOS
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REPRODUCTOR EN VIVO
+    ========================== -->
+
+    <section class="seccion-envivo" id="envivo">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>RADIO ONLINE</span>
+
+                <h2>
+                    Estamos <strong>EN VIVO</strong>
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+            <div class="reproductor">
+
+                <div class="estado-vivo">
+                    <span class="punto-vivo"></span>
+                    EN VIVO
+                </div>
+
+
+                <div class="icono-radio">
+                    <i class="fas fa-radio"></i>
+                </div>
+
+
+                <h3>
+                    MI RADIO
+                </h3>
+
+                <p>
+                    Escucha nuestra transmisión en vivo
+                </p>
+
+
+                <!--
+                    =====================================
+                    REPRODUCTOR DE LA RADIO
+                    =====================================
+
+                    AQUÍ COLOCAREMOS POSTERIORMENTE
+                    LA URL REAL DEL STREAMING DE TU RADIO.
+                -->
+
+               <div class="radio-player">
+    <h3>🎙️ Escucha Familia Stereo en vivo</h3>
+
+    <audio controls>
+        <source src="https://sv2.globalhostlive.com/proxy/familiastereo/live" type="audio/mpeg">
+        Tu navegador no soporta el reproductor.
+    </audio>
+</div>
+
+
+                <!-- Animación de ondas -->
+
+                <div class="ondas" id="ondas">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <p class="mensaje-reproductor" id="mensajeRadio">
+                    Presiona reproducir para escuchar la radio.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         AHORA SONANDO
+    ========================== -->
+
+    <section class="ahora-sonando">
+
+        <div class="contenedor">
+
+            <div class="cancion">
+
+                <div class="portada-cancion">
+                    <i class="fas fa-music"></i>
+                </div>
+
+                <div class="informacion-cancion">
+
+                    <span>
+                        AHORA SONANDO
+                    </span>
+
+                    <h3 id="nombreCancion">
+                        Música cristiana
+                    </h3>
+
+                    <p id="nombreArtista">
+                        Información de la canción
+                    </p>
+
+                </div>
+
+                <div class="icono-sonando">
+                    <i class="fas fa-volume-high"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NOSOTROS
+    ========================== -->
+
+    <section class="nosotros" id="nosotros">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>CONÓCENOS</span>
+
+                <h2>
+                    Sobre <strong>Nosotros</strong>
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+            <div class="nosotros-contenido">
+
+                <div class="nosotros-texto">
+
+                    <h3>
+                        Una radio con propósito
+                    </h3>
+
+                    <p>
+                        Somos una radio cristiana creada con el propósito
+                        de compartir la Palabra de Dios, música cristiana,
+                        mensajes de esperanza y contenidos que puedan
+                        ser de bendición para cada persona que nos escucha.
+                    </p>
+
+                    <p>
+                        Queremos utilizar la radio y la tecnología para
+                        llevar un mensaje de fe y esperanza a diferentes
+                        lugares, acompañando a nuestros oyentes durante
+                        cada momento de su día.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjetas-nosotros">
+
+                    <div class="tarjeta">
+
+                        <i class="fas fa-cross"></i>
+
+                        <h3>
+                            Nuestra misión
+                        </h3>
+
+                        <p>
+                            Compartir un mensaje basado en la Palabra
+                            de Dios mediante música, programas y contenidos
+                            que edifiquen.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tarjeta">
+
+                        <i class="fas fa-heart"></i>
+
+                        <h3>
+                            Nuestro propósito
+                        </h3>
+
+                        <p>
+                            Llegar a las personas con un mensaje de fe,
+                            esperanza y amor.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROGRAMACIÓN
+    ========================== -->
+
+    <section class="programacion" id="programacion">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>ACOMPAÑÁNDOTE CADA DÍA</span>
+
+                <h2>
+                    Nuestra <strong>Programación</strong>
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+            <div class="programas">
+
+                <div class="programa">
+                    <span>06:00 AM</span>
+                    <h3>Devocional de la mañana</h3>
+                    <p>Un momento para comenzar el día con Dios.</p>
+                </div>
+
+
+                <div class="programa">
+                    <span>08:00 AM</span>
+                    <h3>Música con propósito</h3>
+                    <p>Música cristiana para acompañar tu mañana.</p>
+                </div>
+
+
+                <div class="programa">
+                    <span>12:00 PM</span>
+                    <h3>Palabra de Dios</h3>
+                    <p>Reflexiones y mensajes para fortalecer tu fe.</p>
+                </div>
+
+
+                <div class="programa">
+                    <span>06:00 PM</span>
+                    <h3>Reflexión de la tarde</h3>
+                    <p>Un espacio para meditar y agradecer.</p>
+                </div>
+
+
+                <div class="programa">
+                    <span>08:00 PM</span>
+                    <h3>Noche de adoración</h3>
+                    <p>Un tiempo especial de música y adoración.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PODCASTS
+    ========================== -->
+
+    <section class="podcasts" id="podcasts">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>ESCUCHA CUANDO QUIERAS</span>
+
+                <h2>
+                    Nuestros <strong>Podcasts</strong>
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+            <div class="tarjetas-contenido">
+
+                <div class="contenido-card">
+
+                    <div class="contenido-imagen">
+                        <i class="fas fa-book-bible"></i>
+                    </div>
+
+                    <div class="contenido-info">
+
+                        <small>DEVOCIONAL</small>
+
+                        <h3>
+                            Un momento con Dios
+                        </h3>
+
+                        <p>
+                            Reflexiones para fortalecer nuestra fe.
+                        </p>
+
+                        <a href="#">
+                            ESCUCHAR
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contenido-card">
+
+                    <div class="contenido-imagen">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+
+                    <div class="contenido-info">
+
+                        <small>ENTREVISTA</small>
+
+                        <h3>
+                            Historias que inspiran
+                        </h3>
+
+                        <p>
+                            Testimonios y conversaciones especiales.
+                        </p>
+
+                        <a href="#">
+                            ESCUCHAR
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contenido-card">
+
+                    <div class="contenido-imagen">
+                        <i class="fas fa-church"></i>
+                    </div>
+
+                    <div class="contenido-info">
+
+                        <small>MENSAJE</small>
+
+                        <h3>
+                            Palabra de esperanza
+                        </h3>
+
+                        <p>
+                            Mensajes que nos ayudan a seguir adelante.
+                        </p>
+
+                        <a href="#">
+                            ESCUCHAR
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NOTICIAS
+    ========================== -->
+
+    <section class="noticias" id="noticias">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>MANTENTE INFORMADO</span>
+
+                <h2>
+                    Noticias y <strong>Contenidos</strong>
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+            <div class="noticias-grid">
+
+                <article>
+
+                    <span>RADIO</span>
+
+                    <h3>
+                        Bienvenidos a nuestra radio
+                    </h3>
+
+                    <p>
+                        Conoce nuestra programación y todo lo que
+                        tenemos preparado para nuestros oyentes.
+                    </p>
+
+                    <a href="#">
+                        LEER MÁS
+                    </a>
+
+                </article>
+
+
+                <article>
+
+                    <span>FE</span>
+
+                    <h3>
+                        Una palabra para tu día
+                    </h3>
+
+                    <p>
+                        Un mensaje de esperanza para comenzar
+                        cada día con confianza.
+                    </p>
+
+                    <a href="#">
+                        LEER MÁS
+                    </a>
+
+                </article>
+
+
+                <article>
+
+                    <span>EVENTOS</span>
+
+                    <h3>
+                        Próximamente
+                    </h3>
+
+                    <p>
+                        Aquí podrás publicar eventos y actividades
+                        de la radio.
+                    </p>
+
+                    <a href="#">
+                        LEER MÁS
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REDES SOCIALES
+    ========================== -->
+
+    <section class="redes">
+
+        <div class="contenedor">
+
+            <h2>
+                Sigue nuestra radio
+            </h2>
+
+            <p>
+                Encuéntranos también en nuestras redes sociales.
+            </p>
+
+
+            <div class="botones-redes">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-tiktok"></i>
+                    TikTok
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section class="contacto" id="contacto">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>ESTAMOS PARA SERVIRTE</span>
+
+                <h2>
+                    <strong>Contáctanos</strong>
+                </h2>
+
+                <div class="linea"></div>
+
+            </div>
+
+
+            <div class="contacto-grid">
+
+                <div class="datos-contacto">
+
+                    <h3>
+                        Ponte en contacto
+                    </h3>
+
+                    <p>
+                        Si deseas comunicarte con nosotros,
+                        puedes hacerlo mediante cualquiera
+                        de nuestros medios de contacto.
+                    </p>
+
+
+                    <div class="dato">
+
+                        <i class="fas fa-envelope"></i>
+
+                        <div>
+                            <strong>Correo</strong>
+                            <p>contacto@miradio.com</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dato">
+
+                        <i class="fab fa-whatsapp"></i>
+
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p>+593 000 000 000</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form class="formulario">
+
+                    <input type="text"
+                        placeholder="Tu nombre"
+                        required>
+
+                    <input type="email"
+                        placeholder="Tu correo"
+                        required>
+
+                    <input type="text"
+                        placeholder="Asunto"
+                        required>
+
+                    <textarea
+                        placeholder="Escribe tu mensaje"
+                        rows="6"
+                        required></textarea>
+
+                    <button type="submit">
+                        ENVIAR MENSAJE
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-contenido">
+
+            <div class="footer-logo">
+
+                <div class="logo-radio">
+                    <span>R</span>
+                </div>
+
+                <h3>
+                    MI RADIO
+                </h3>
+
+                <p>
+                    Una radio para tu vida.
+                </p>
+
+            </div>
+
+
+            <div class="footer-enlaces">
+
+                <h4>Enlaces</h4>
+
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#programacion">Programación</a>
+                <a href="#envivo">En vivo</a>
+                <a href="#contacto">Contacto</a>
+
+            </div>
+
+
+            <div class="footer-redes">
+
+                <h4>Síguenos</h4>
+
+                <div>
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Mi Radio. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Botón volver arriba -->
+
+    <button id="volverArriba" class="volver-arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Nuestro JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
